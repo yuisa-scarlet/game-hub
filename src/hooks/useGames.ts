@@ -19,6 +19,7 @@ export interface Game {
   rating_top: number;
   ratings_count: number;
   reviews_text_count: number;
+  metacritic: number;
   parent_platforms: { platform: Platform }[];
 }
 
