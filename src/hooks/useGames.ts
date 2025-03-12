@@ -2,6 +2,12 @@ import axios from "@/services/axios";
 import { CanceledError } from "axios";
 import { useEffect, useState } from "react";
 
+export interface Platform {
+  id: number;
+  name: string;
+  slug: string;
+}
+
 export interface Game {
   id: number;
   slug: string;
@@ -13,6 +19,7 @@ export interface Game {
   rating_top: number;
   ratings_count: number;
   reviews_text_count: number;
+  parent_platforms: { platform: Platform }[];
 }
 
 export interface GameResponse {
