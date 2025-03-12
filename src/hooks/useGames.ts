@@ -2,7 +2,7 @@ import axios from "@/services/axios";
 import { CanceledError } from "axios";
 import { useEffect, useState } from "react";
 
-interface Game {
+export interface Game {
   id: number;
   slug: string;
   name: string;
@@ -15,7 +15,7 @@ interface Game {
   reviews_text_count: number;
 }
 
-interface GameResponse {
+export interface GameResponse {
   count: number;
   results: Game[];
 }
