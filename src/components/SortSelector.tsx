@@ -17,7 +17,7 @@ export default function SortSelector({ onSelectSortOrder, sortOrder }: Props) {
   ];
 
   const currentSortOrder = sortOrders.find(
-    (order) => order.value === sortOrder
+  (order) => order.value === sortOrder
   );
 
   return (
